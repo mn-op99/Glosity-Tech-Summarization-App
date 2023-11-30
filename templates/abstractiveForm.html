@@ -1,0 +1,81 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Extractive Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, rgb(79, 135, 145), rgb(212, 247, 16));
+        }
+
+        .container {
+            background: linear-gradient(to bottom right, #30a4f1, #000000);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            /* Adjusted height for a taller input box */
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #2980b9, #025891);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="/abstractiveSummarize" method="post">
+            <label for="textInput">ENTER TEXT:</label>
+            <input type="text" id="textInput" name="text" placeholder="Type something..." required>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+</body>
+
+</html>
